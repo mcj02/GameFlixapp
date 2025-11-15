@@ -10,6 +10,6 @@ public class AppTest {
 @Test
   
 void additionTest(){
-assertEquals (4, 2+2);
+assertEquals (5, 2+2);
 }
 }
