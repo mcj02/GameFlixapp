@@ -2,13 +2,12 @@ package com.example.gameflix;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 class GameFlixApplicationTests {
 
     @Test
     void contextLoads() {
-        assertEquals (4, 2+2);
-    }
+        }
 
 }
