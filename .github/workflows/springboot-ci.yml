@@ -1,7 +1,7 @@
 name: springboot-ci.yml
 on:
   push:
-    branches: [ main, master ]git
+    branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
 
