@@ -8,6 +8,7 @@ class GameFlixApplicationTests {
 
     @Test
     void contextLoads() {
+        assertEquals (4, 2+2);
     }
 
 }
