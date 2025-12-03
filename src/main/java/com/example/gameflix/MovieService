@@ -1,0 +1,14 @@
+package com.example.gameflix;
+
+import org.springframework.stereotype.Service;
+import java.util.List;
+
+@Service
+public class MovieService {
+
+    public List<String> getAllMovies() {
+        return List.of("movie1", "movie2", "movie3", "movie4", "movie5");
+    }
+
+
+}
