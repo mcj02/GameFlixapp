@@ -1,0 +1,29 @@
+package com.example.gameflix;
+
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class MovieServiceTest {
+    @Autowired
+    private MovieService movieService;
+
+    @Test
+    void getAllMovies_ShouldReturnList() {
+        var movies = movieService.getAllMovies();
+        Assertions.assertFalse(movies.isEmpty());
+    }
+    @Test
+    void getAllMovies_ReturnOneMovie() {
+        var movies = movieService.getAllMovies();
+        Assertions.assertEquals(5, movies.size());
+    }
+
+    @Test
+    void getAllMovies_ReturnMovieName() {
+        var movies = movieService.getAllMovies();
+        Assertions.assertEquals("movie1",movies.get(0));
+    }
+}
